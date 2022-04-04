@@ -23,8 +23,8 @@ const server = http.createServer((request, response) => {
   if (method === "GET") {
     if (url === "/") {
       sendResponse("index.html", 200, response);
-    } else if (url === "/about.html") {
-      sendResponse("about.html", 200, response);
+    } else if (url === "/post.html") {
+      sendResponse("post.html", 200, response);
     } else {
       sendResponse("404.html", 404, response);
     }
